@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1280, 700]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="809" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="logout" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Component id="jTabbedPane1" alignment="0" pref="1280" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="logout" min="-2" pref="31" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="48" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="33" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Th&#x1b0; vi&#x1ec7;n tr&#x1b0;&#x1edd;ng &#x111;&#x1ea1;i h&#x1ecd;c Phenikaa"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="logout">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Images/Logout-icon.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng xu&#x1ea5;t"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="logoutMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logoutActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fb" green="ca" red="ca" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="tabPlacement" type="int" value="2"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="24" style="1"/>
+            </Property>
+            <Property name="opaque" type="boolean" value="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="home">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Trang ch&#x1ee7;">
+                    <Property name="tabTitle" type="java.lang.String" value="Trang ch&#x1ee7;"/>
+                    <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/home.png"/>
+                    </Property>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel7">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="99" green="99" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTabbedPane2" alignment="0" pref="1009" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTabbedPane2" alignment="0" pref="619" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="cc" green="cc" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                            <BevelBorder>
+                              <Color PropertyName="highlightInner" blue="ff" green="33" red="66" type="rgb"/>
+                            </BevelBorder>
+                          </Border>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="18" style="3"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                              <JTabbedPaneConstraints tabName="Gi&#x1edb;i thi&#x1ec7;u">
+                                <Property name="tabTitle" type="java.lang.String" value="Gi&#x1edb;i thi&#x1ec7;u"/>
+                              </JTabbedPaneConstraints>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea2">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="cc" green="cc" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="16" style="0"/>
+                                </Property>
+                                <Property name="lineWrap" type="boolean" value="true"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="Trung t&#xe2;m Th&#xf4;ng tin Th&#x1b0; vi&#x1ec7;n Tr&#x1b0;&#x1edd;ng &#x110;&#x1ea1;i h&#x1ecd;c Phenikaa ch&#xed;nh th&#x1ee9;c &#x111;&#x1b0;&#x1ee3;c th&#xe0;nh l&#x1ead;p t&#x1eeb; ng&#xe0;y 18/9/2020 theo Quy&#x1ebf;t &#x111;&#x1ecb;nh s&#x1ed1; 18/Q&#x110;-&#x110;HP-H&#x110;T tr&#xea;n c&#x1a1; s&#x1edf; t&#xe1;ch b&#x1ed9; ph&#x1ead;n Qu&#x1ea3;n l&#xfd; Th&#x1b0; vi&#x1ec7;n t&#x1eeb; Ph&#xf2;ng &#x110;&#xe0;o t&#x1ea1;o v&#xe0; Qu&#x1ea3;n l&#xfd; sinh vi&#xea;n.&#xa;&#xa;Ch&#x1ee9;c n&#x103;ng nhi&#x1ec7;m v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin Th&#x1b0; vi&#x1ec7;n &#x111;&#x1b0;&#x1ee3;c quy &#x111;&#x1ecb;nh t&#x1ea1;i Quy &#x111;&#x1ecb;nh ch&#x1ee9;c n&#x103;ng nhi&#x1ec7;m v&#x1ee5; Ph&#xf2;ng/Ban/Khoa/Vi&#x1ec7;n/Trung t&#xe2;m tr&#x1ef1;c thu&#x1ed9;c Tr&#x1b0;&#x1edd;ng &#x110;&#x1ea1;i h&#x1ecd;c Phenikaa.&#xa;&#xa;TRUNG T&#xc2;M TH&#xd4;NG TIN TH&#x1af; VI&#x1ec6;N PHENIKAA UNI l&#xe0; n&#x1a1;i H&#x1ed7; tr&#x1ee3; h&#x1ecd;c t&#x1ead;p / nghi&#xea;n c&#x1ee9;u / &#x111;&#x1ed5;i m&#x1edb;i / kh&#x1edf;i nghi&#x1ec7;p (Learn - Study / Research / Innovate / StartUp); Ph&#xe1;t sinh &#xfd; t&#x1b0;&#x1edf;ng m&#x1edb;i (Ideas); Giao l&#x1b0;u, h&#x1ee3;p t&#xe1;c, k&#x1ebf;t n&#x1ed1;i, chia s&#x1ebb; h&#x1ecd;c thu&#x1ead;t (Collaborate &#x2013; Connect - Sharing); L&#xe0; n&#x1a1;i truy&#x1ec1;n c&#x1ea3;m h&#x1ee9;ng nghi&#xea;n c&#x1ee9;u, s&#xe1;ng t&#x1ea1;o (Inspire, Create).&#xa;&#xa;Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n &#x1ee9;ng d&#x1ee5;ng v&#xe0; tri&#x1ec3;n khai ph&#x1ea7;n m&#x1ec1;m qu&#x1ea3;n tr&#x1ecb; th&#x1b0; vi&#x1ec7;n &#x111;i&#x1ec7;n t&#x1eed; Koha, Th&#x1b0; vi&#x1ec7;n s&#x1ed1; Dspace, C&#x1ed5;ng th&#xf4;ng tin Th&#x1b0; vi&#x1ec7;n, &#xe1;p d&#x1ee5;ng c&#xe1;c ti&#xea;u chu&#x1ea9;n qu&#x1ed1;c t&#x1ebf; v&#x1ec1; m&#xf4; t&#x1ea3; bi&#xea;n m&#x1ee5;c AACR2, DublinCore, khung ph&#xe2;n lo&#x1ea1;i DDC, &#x111;&#x1ec3; n&#xe2;ng cao hi&#x1ec7;u qu&#x1ea3; ho&#x1ea1;t &#x111;&#x1ed9;ng th&#xf4;ng tin th&#x1b0; vi&#x1ec7;n, k&#x1ebf;t n&#x1ed1;i, h&#x1ee3;p t&#xe1;c, chia s&#x1ebb; t&#xe0;i nguy&#xea;n v&#x1edb;i c&#xe1;c Trung t&#xe2;m Th&#xf4;ng tin &#x2013; Th&#x1b0; vi&#x1ec7;n c&#x1ee7;a c&#xe1;c tr&#x1b0;&#x1edd;ng &#x111;&#x1ea1;i h&#x1ecd;c trong n&#x1b0;&#x1edb;c v&#xe0; c&#xe1;c c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u qu&#x1ed1;c t&#x1ebf;.&#xa;&#xa;H&#x1a1;n 40.000 t&#xe0;i li&#x1ec7;u in v&#xe0; ~4000 t&#xe0;i li&#x1ec7;u s&#x1ed1; - 7 c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u khoa h&#x1ecd;c tr&#x1ef1;c tuy&#x1ebf;n v&#xe0; c&#xe1;c ngu&#x1ed3;n h&#x1ecd;c li&#x1ec7;u m&#x1edf; - Ho&#x1ea1;t &#x111;&#x1ed9;ng l&#x1b0;u th&#xf4;ng t&#xe0;i li&#x1ec7;u tr&#xea;n n&#x1ec1;n t&#x1ea3;ng PC v&#xe0; Mobile v&#x1edb;i k&#x1ebf;t n&#x1ed1;i nhanh, giao di&#x1ec7;n th&#xe2;n thi&#x1ec7;n, d&#x1ec5; s&#x1eed; d&#x1ee5;ng.&#xa;&#xa;Kh&#xf4;ng gian &#x111;&#x1ecd;c s&#xe1;ch m&#x1edf; v&#x1edb;i t&#x1ed5;ng di&#x1ec7;n t&#xed;ch g&#x1ea7;n 3.200m2 &#x111;&#x1b0;&#x1ee3;c thi&#x1ebf;t k&#x1ebf; d&#x1ecd;c c&#xe1;c d&#xe3;y h&#xe0;nh lang ch&#xed;nh thu&#x1ed9;c 2 d&#xe3;y t&#xf2;a nh&#xe0; ch&#x1eb5;n - l&#x1ebb;.&#xa;&#xa;&#x110;&#x1ecb;a &#x111;i&#x1ec3;m: Ph&#xf2;ng 102-105 A4 (PULIC m&#x1edb;i T4,5,6 T&#xf2;a A10)&#xa;Ph&#xf2;ng &#x111;&#x1ecd;c c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin Th&#x1b0; vi&#x1ec7;n b&#x1ea1;n &#x111;&#x1ecd;c s&#x1ebd; &#x111;&#x1b0;&#x1ee3;c t&#x1ef1; do kh&#xe1;m ph&#xe1;, tr&#x1ea3;i nghi&#x1ec7;m t&#xec;m ki&#x1ebf;m kho s&#xe1;ch theo c&#xe1;c ng&#xe0;nh khoa h&#x1ecd;c, c&#xe1;c l&#x129;nh v&#x1ef1;c nghi&#xea;n c&#x1ee9;u, h&#x1ecd;c t&#x1ead;p, gi&#x1ea3;i tr&#xed;. B&#x1ea1;n &#x111;&#x1ecd;c &#x111;&#x1b0;&#x1ee3;c trang b&#x1ecb; c&#xe1;c thi&#x1ebf;t b&#x1ecb; tra c&#x1ee9;u tr&#x1ef1;c tuy&#x1ebf;n, c&#xe1;c ph&#x1ea7;n m&#x1ec1;m th&#x1b0; vi&#x1ec7;n &#x111;i&#x1ec7;n t&#x1eed;, th&#x1b0; vi&#x1ec7;n s&#x1ed1; ho&#x1ea1;t &#x111;&#x1ed9;ng tr&#xea;n c&#xe1;c thi&#x1ebf;t b&#x1ecb; di &#x111;&#x1ed9;ng th&#xf4;ng minh &#x111;&#x1ec3; t&#x1ed1;i &#x1b0;u h&#xf3;a tr&#x1ea3;i nghi&#x1ec7;m t&#xec;m ki&#x1ebf;m khai th&#xe1;c s&#xe1;ch in v&#xe0; &#x111;&#x1ecd;c t&#xe0;i li&#x1ec7;u s&#x1ed1; tr&#x1ef1;c tuy&#x1ebf;n.&#xa;&#xa;Kh&#xf4;ng gian &#x111;&#x1ecd;c s&#xe1;ch, nghi&#xea;n c&#x1ee9;u, h&#x1ecd;c t&#x1ead;p kh&#xf4;ng b&#x1ecb; g&#xf2; b&#xf3; trong c&#xe1;c ph&#xf2;ng &#x111;&#x1ecd;c, b&#x1ea1;n &#x111;&#x1ecd;c c&#xf3; th&#x1ec3; m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u v&#xe0; mang t&#xe0;i li&#x1ec7;u t&#x1edb;i Kh&#xf4;ng gian m&#x1edf; &#x111;&#x1ec3; &#x111;&#x1ecd;c m&#x1ed9;t c&#xe1;ch tho&#x1ea3;i m&#xe1;i v&#x1edb;i kh&#xf4;ng gian tr&#xe0;n ng&#x1ead;p &#xe1;nh s&#xe1;ng, h&#xf2;a m&#xec;nh c&#x169;ng thi&#xea;n nhi&#xea;n c&#xe2;y l&#xe1; c&#x169;ng nh&#x1b0; kh&#xf4;ng b&#x1ecb; gi&#x1edb;i h&#x1ea1;n v&#x1ec1; th&#x1edd;i gian.&#xa;&#xa;Gi&#x1edd; m&#x1edf; c&#x1eed;a:&#xa;            - Ph&#xf2;ng &#x111;&#x1ecd;c: T&#x1eeb; Th&#x1ee9; 2 &#x2013; Th&#x1ee9; 6; s&#xe1;ng 8h-12h; chi&#x1ec1;u t&#x1eeb; 13h-17h&#xa;&#xa;            - Ph&#xf2;ng t&#x1ef1; h&#x1ecd;c: P204.A4 m&#x1edf; c&#x1eed;a 24/7&#xa;&#xa;C&#xe1;c &#x111;&#x1b0;&#x1edd;ng link truy c&#x1ead;p:&#xa;            + C&#x1ed5;ng th&#xf4;ng tin th&#x1b0; vi&#x1ec7;n: http://library.phenikaa-uni.edu.vn&#xa;&#xa;            + Th&#x1b0; vi&#x1ec7;n &#x111;i&#x1ec7;n t&#x1eed;: http://elib.phenikaa-uni.edu.vn&#xa;&#xa;            + Th&#x1b0; vi&#x1ec7;n s&#x1ed1;: http://dlib.phenikaa-uni.edu.vn&#xa;&#xa;M&#x1ed9;t s&#x1ed1; li&#xea;n k&#x1ebf;t quan tr&#x1ecd;ng b&#x1ea1;n &#x111;&#x1ecd;c kh&#xf4;ng th&#x1ec3; b&#x1ecf; qua:&#xa;            + N&#x1ed9;i quy th&#x1b0; vi&#x1ec7;n: https://library.phenikaa-uni.edu.vn/node/156&#xa;&#xa;           + M&#x1ed9;t s&#x1ed1; kho&#x1ea3;n thu t&#x1ea1;i Trung t&#xe2;m Th&#xf4;ng tin Th&#x1b0; vi&#x1ec7;n: https://library.phenikaa-uni.edu.vn/node/157&#xa;&#xa;            + H&#x1b0;&#x1edb;ng d&#x1eab;n s&#x1eed; d&#x1ee5;ng Th&#x1b0; vi&#x1ec7;n: https://library.phenikaa-uni.edu.vn/node/191"/>
+                                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[20, 20, 20, 20]"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                              <JTabbedPaneConstraints tabName="N&#x1ed9;i quy th&#x1b0; vi&#x1ec7;n">
+                                <Property name="tabTitle" type="java.lang.String" value="N&#x1ed9;i quy th&#x1b0; vi&#x1ec7;n"/>
+                              </JTabbedPaneConstraints>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea1">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="cc" green="ff" red="99" type="rgb"/>
+                                </Property>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="16" style="0"/>
+                                </Property>
+                                <Property name="lineWrap" type="boolean" value="true"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="                                                                                       N&#x1ed8;I QUY TRUNG T&#xc2;M TH&#xd4;NG TIN - TH&#x1af; VI&#x1ec6;N&#xa;&#xa;                                                                                                      TR&#x1af;&#x1edc;NG &#x110;&#x1ea0;I H&#x1ecc;C PHENIKAA&#xa;&#xa;(Ban h&#xe0;nh k&#xe8;m theo Quy&#x1ebf;t &#x111;&#x1ecb;nh s&#x1ed1; 07/Q&#x110;-&#x110;HP-TTTV ng&#xe0;y 05 th&#xe1;ng 01 n&#x103;m 2021)&#xa;&#xa; &#x110;i&#x1ec1;u 1. &#x110;&#x1ed1;i t&#x1b0;&#x1ee3;ng s&#x1eed; d&#x1ee5;ng&#xa;&#xa;- C&#xe1;n b&#x1ed9;, gi&#x1ea3;ng vi&#xea;n, sinh vi&#xea;n, h&#x1ecd;c vi&#xea;n c&#xe1;c h&#x1ec7; &#x111;&#xe0;o t&#x1ea1;o c&#x1ee7;a Tr&#x1b0;&#x1edd;ng &#x110;&#x1ea1;i h&#x1ecd;c Phenikaa (sau &#x111;&#xe2;y g&#x1ecd;i t&#x1eaf;t l&#xe0; &#x201c;Nh&#xe0; tr&#x1b0;&#x1edd;ng&#x201d;).&#xa;&#xa;- &#x110;&#x1ed1;i t&#x1b0;&#x1ee3;ng thu&#x1ed9;c di&#x1ec7;n li&#xea;n k&#x1ebf;t c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n Tr&#x1b0;&#x1edd;ng &#x110;&#x1ea1;i h&#x1ecd;c Phenikaa (sau &#x111;&#xe2;y vi&#x1ebf;t t&#x1eaf;t l&#xe0; &#x201c;Trung t&#xe2;m TTTV&#x201d;): B&#x1ea1;n &#x111;&#x1ecd;c kh&#xf4;ng thu&#x1ed9;c Nh&#xe0; tr&#x1b0;&#x1edd;ng, c&#xf3; nhu c&#x1ea7;u s&#x1eed; d&#x1ee5;ng s&#x1ea3;n ph&#x1ea9;m, d&#x1ecb;ch v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n ph&#x1ea3;i c&#xf3; Gi&#x1ea5;y gi&#x1edb;i thi&#xea;&#x1ee5; c&#x1ee7;a c&#x1a1; quan ch&#x1ee7; qu&#x1ea3;n, k&#xe8;m theo Ch&#x1ee9;ng minh th&#x1b0; nh&#xe2;n d&#xe2;n/C&#x103;n c&#x1b0;&#x1edb;c c&#xf4;ng d&#xe2;n, l&#x1ec7; ph&#xed; k&#xfd; c&#x1b0;&#x1ee3;c v&#xe0; ph&#xed; d&#x1ecb;ch v&#x1ee5; theo quy &#x111;&#x1ecb;nh c&#x1ee7;a Trung t&#xe2;m TTTV.&#xa;&#xa;- Ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng &#x111;&#x1b0;&#x1ee3;c c&#x1ea5;p quy&#x1ec1;n s&#x1eed; d&#x1ee5;ng s&#x1ea3;n ph&#x1ea9;m, d&#x1ecb;ch v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m TTTV khi c&#xf3; &#x111;&#x1ee7; c&#xe1;c &#x111;i&#x1ec1;u ki&#x1ec7;n sau:&#xa;&#xa;          + C&#xf3; t&#xe0;i kho&#x1ea3;n c&#xe1;n b&#x1ed9;, gi&#x1ea3;ng vi&#xea;n, sinh vi&#xea;n, h&#x1ecd;c vi&#xea;n c&#x1ee7;a Tr&#x1b0;&#x1edd;ng ho&#x1eb7;c th&#x1ebb; s&#x1eed; d&#x1ee5;ng Th&#x1b0; vi&#x1ec7;n &#x111;&#x1ed1;i v&#x1edb;i ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng di&#x1ec7;n li&#xea;n k&#x1ebf;t c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin -Th&#x1b0; vi&#x1ec7;n&#xa;&#xa;          + Tham gia v&#xe0; ho&#xe0;n th&#xe0;nh c&#xe1;c l&#x1edb;p t&#x1ead;p hu&#x1ea5;n s&#x1eed; d&#x1ee5;ng Th&#x1b0; vi&#x1ec7;n v&#xe0; n&#x1ed9;p kinh ph&#xed; &#x111;&#x1eb7;t c&#x1ecd;c s&#x1eed; d&#x1ee5;ng s&#x1ea3;n ph&#x1ea9;m, d&#x1ecb;ch v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m TTTV (kh&#xf4;ng &#xe1;p d&#x1ee5;ng &#x111;&#x1ed1;i v&#x1edb;i c&#xe1;n b&#x1ed9;, gi&#x1ea3;ng vi&#xea;n c&#x1ee7;a Tr&#x1b0;&#x1edd;ng).&#xa;&#xa;          &#x110;i&#x1ec1;u 2. Tr&#xe1;ch nhi&#x1ec7;m c&#x1ee7;a ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng s&#x1ea3;n ph&#x1ea9;m, d&#x1ecb;ch v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n&#xa;&#xa;          - Kh&#xf4;ng s&#x1eed; d&#x1ee5;ng th&#x1ebb;/t&#xe0;i kho&#x1ea3;n c&#x1ee7;a ng&#x1b0;&#x1edd;i kh&#xe1;c v&#xe0; kh&#xf4;ng cho ng&#x1b0;&#x1edd;i kh&#xe1;c m&#x1b0;&#x1ee3;n th&#x1ebb;/t&#xe0;i kho&#x1ea3;n. Khi m&#x1ea5;t th&#x1ebb;, qu&#xea;n m&#x1ead;t kh&#x1ea9;u, ph&#x1ea3;i b&#xe1;o ngay cho Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n &#x111;&#x1ec3; l&#xe0;m th&#x1ee7; t&#x1ee5;c b&#x1ea3;o m&#x1ead;t v&#xe0; &#x111;&#x1b0;&#x1ee3;c h&#x1ed7; tr&#x1ee3;.&#xa;&#xa;          - Xu&#x1ea5;t tr&#xec;nh th&#x1ebb; v&#xe0; g&#x1eed;i &#x111;&#x1ed3; v&#xe0;o n&#x1a1;i quy &#x111;&#x1ecb;nh; T&#x1ef1; b&#x1ea3;o qu&#x1ea3;n t&#x1b0; trang v&#xe0; c&#xe1;c v&#x1ead;t d&#x1ee5;ng c&#xe1; nh&#xe2;n c&#xf3; gi&#xe1; tr&#x1ecb; kh&#xe1;c.&#xa;&#xa;          - Ch&#x1ea5;p h&#xe0;nh c&#xe1;c quy &#x111;&#x1ecb;nh c&#x1ee7;a Th&#x1b0; vi&#x1ec7;n v&#x1ec1; vi&#x1ec7;c s&#x1eed; d&#x1ee5;ng t&#xe0;i li&#x1ec7;u, c&#x1a1; s&#x1edf; v&#x1ead;t ch&#x1ea5;t, trang thi&#x1ebf;t b&#x1ecb; c&#x1ee7;a Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          - Gi&#x1eef; g&#xec;n, b&#x1ea3;o qu&#x1ea3;n t&#xe0;i nguy&#xea;n th&#xf4;ng tin, trang thi&#x1ebf;t b&#x1ecb;, c&#x1a1; s&#x1edf; v&#x1ead;t ch&#x1ea5;t c&#x1ee7;a Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n trong qu&#xe1; tr&#xec;nh s&#x1eed; d&#x1ee5;ng.&#xa;&#xa;          - Gi&#x1eef; tr&#x1ead;t t&#x1ef1;, an ninh, an to&#xe0;n ch&#xe1;y n&#x1ed5; v&#xe0; v&#x1ec7; sinh m&#xf4;i tr&#x1b0;&#x1edd;ng: kh&#xf4;ng h&#xfa;t thu&#x1ed1;c, kh&#xf4;ng mang nh&#x1eef;ng v&#x1ead;t d&#x1ee5;ng d&#x1ec5; ch&#xe1;y, n&#x1ed5; v&#xe0; &#x111;&#x1ed3; &#x103;n u&#x1ed1;ng (ngo&#xe0;i n&#x1b0;&#x1edb;c u&#x1ed1;ng &#x111;&#xf3;ng chai) v&#xe0;o Trung t&#xe2;m Th&#xf4;ng tin &#x2013; Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          - Ch&#x1ee5;p &#x1ea3;nh, quay phim trong khu&#xf4;n vi&#xea;n Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n ph&#x1ea3;i &#x111;&#x1b0;&#x1ee3;c s&#x1ef1; &#x111;&#x1ed3;ng &#xfd; c&#x1ee7;a Nh&#xe0; tr&#x1b0;&#x1edd;ng.&#xa;&#xa;          - Xu&#x1ea5;t tr&#xec;nh th&#x1ebb;, c&#xe1;c t&#xe0;i li&#x1ec7;u, t&#xfa;i x&#xe1;ch v&#xe0; c&#xe1;c v&#x1ead;t d&#x1ee5;ng kh&#xe1;c khi c&#xf3; y&#xea;u c&#x1ea7;u ki&#x1ec3;m tra c&#x1ee7;a c&#xe1;n b&#x1ed9; Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          - T&#x1ef1; b&#x1ea3;o v&#x1ec7; th&#xf4;ng tin c&#xe1; nh&#xe2;n, t&#xe0;i kho&#x1ea3;n v&#xe0; m&#x1ead;t kh&#x1ea9;u &#x111;&#x1b0;&#x1ee3;c c&#x1ea5;p t&#x1eeb; Nh&#xe0; tr&#x1b0;&#x1edd;ng.&#xa;&#xa;          - Tr&#x1ea3; l&#x1ea1;i c&#xe1;c t&#xe0;i li&#x1ec7;u ch&#x1b0;a l&#xe0;m th&#x1ee7; t&#x1ee5;c m&#x1b0;&#x1ee3;n tr&#x1b0;&#x1edb;c khi r&#x1edd;i kh&#x1ecf;i Trung t&#xe2;m Th&#xf4;ng tin -Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          &#x110;i&#x1ec1;u 3. S&#x1eed; d&#x1ee5;ng t&#xe0;i li&#x1ec7;u th&#x1b0; vi&#x1ec7;n&#xa;&#xa;Th&#x1edd;i h&#x1ea1;n m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u tu&#x1ef3; thu&#x1ed9;c v&#xe0;o t&#x1eeb;ng &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng b&#x1ea1;n &#x111;&#x1ecd;c v&#xe0; t&#x1eeb;ng lo&#x1ea1;i t&#xe0;i li&#x1ec7;u. H&#x1ebf;t th&#x1edd;i h&#x1ea1;n, n&#x1ebf;u mu&#x1ed1;n m&#x1b0;&#x1ee3;n ti&#x1ebf;p b&#x1ea1;n &#x111;&#x1ecd;c ph&#x1ea3;i mang t&#xe0;i li&#x1ec7;u &#x111;&#x1ebf;n xin gia h&#x1ea1;n v&#xe0; ch&#x1ec9; &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u m&#x1edb;i khi &#x111;&#xe3; tr&#x1ea3; t&#xe0;i li&#x1ec7;u c&#x169;.&#xa;&#xa;1. &#x110;&#x1ed1;i v&#x1edb;i b&#x1ea1;n &#x111;&#x1ecd;c l&#xe0; sinh vi&#xea;n, h&#x1ecd;c vi&#xea;n:&#xa;&#xa;Ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n v&#x1ec1; nh&#xe0; t&#x1ed1;i &#x111;a 05 t&#xe0;i li&#x1ec7;u/1 l&#x1ea7;n, trong &#x111;&#xf3;:&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i c&#xe1;c gi&#xe1;o tr&#xec;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 10 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 150 ng&#xe0;y/ t&#xe0;i li&#x1ec7;u v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u tham kh&#x1ea3;o chuy&#xea;n ng&#xe0;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 05 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n t&#x1ed1;i &#x111;a 90 ng&#xe0;y/t&#xe0;i li&#x1ec7;u v&#xe0; &#x111;&#x1b0;&#x1ee3;c gia h&#x1ea1;n t&#x1ed1;i &#x111;a 02 l&#x1ea7;n m&#x1ed7;i l&#x1ea7;n 03 ng&#xe0;y.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#x1ea1;p ch&#xed; chuy&#xea;n ng&#xe0;nh: &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 14 ng&#xe0;y/ t&#xe0;i li&#x1ec7;u v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i s&#xe1;ch tham kh&#x1ea3;o: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a m&#x1b0;&#x1ee3;n l&#xe0; 03 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 15 ng&#xe0;y v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u c&#xf3; d&#xe1;n 01 d&#x1ea5;u &#x111;&#x1ecf; (t&#xe0;i li&#x1ec7;u n&#x1ed9;i sinh, t&#xe0;i li&#x1ec7;u qu&#xfd; hi&#x1ebf;m, t&#xe0;i li&#x1ec7;u tra c&#x1ee9;u, &#x2026;), b&#xe1;o &#x2013; t&#x1ea1;p ch&#xed; kh&#xe1;c: kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n v&#x1ec1; nh&#xe0;.&#xa;&#xa;          2. &#x110;&#x1ed1;i v&#x1edb;i c&#xe1;n b&#x1ed9;, gi&#x1ea3;ng vi&#xea;n:     &#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i c&#xe1;c gi&#xe1;o tr&#xec;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 10 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n kh&#xf4;ng gi&#x1edb;i h&#x1ea1;n th&#x1edd;i gian &#x111;&#x1ed1;i v&#x1edb;i gi&#xe1;o tr&#xec;nh thu&#x1ed9;c b&#x1ed9; m&#xf4;n gi&#x1ea3;ng d&#x1ea1;y.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u tham kh&#x1ea3;o chuy&#xea;n ng&#xe0;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 05 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n kh&#xf4;ng gi&#x1edb;i h&#x1ea1;n th&#x1edd;i gian &#x111;&#x1ed1;i v&#x1edb;i gi&#xe1;o tr&#xec;nh thu&#x1ed9;c b&#x1ed9; m&#xf4;n gi&#x1ea3;ng d&#x1ea1;y.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#x1ea1;p ch&#xed; chuy&#xea;n ng&#xe0;nh: &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 14 ng&#xe0;y/ t&#xe0;i li&#x1ec7;u v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i s&#xe1;ch tham kh&#x1ea3;o: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a m&#x1b0;&#x1ee3;n l&#xe0; 03 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 15 ng&#xe0;y v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u c&#xf3; d&#xe1;n 01 d&#x1ea5;u &#x111;&#x1ecf; (t&#xe0;i li&#x1ec7;u n&#x1ed9;i sinh, t&#xe0;i li&#x1ec7;u qu&#xfd; hi&#x1ebf;m, t&#xe0;i li&#x1ec7;u tra c&#x1ee9;u, t&#xe0;i li&#x1ec7;u &#x111;&#x1ed9;c b&#x1ea3;n &#x2026;), b&#xe1;o &#x2013; t&#x1ea1;p ch&#xed; kh&#xe1;c: kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n v&#x1ec1; nh&#xe0;.&#xa;&#xa;      3. &#x110;&#x1ed1;i v&#x1edb;i nghi&#xea;n c&#x1ee9;u vi&#xea;n:&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i c&#xe1;c gi&#xe1;o tr&#xec;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 05 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 150 ng&#xe0;y/ t&#xe0;i li&#x1ec7;u v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u tham kh&#x1ea3;o chuy&#xea;n ng&#xe0;nh: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a 05 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n t&#x1ed1;i &#x111;a 90 ng&#xe0;y/t&#xe0;i li&#x1ec7;u v&#xe0; &#x111;&#x1b0;&#x1ee3;c gia h&#x1ea1;n t&#x1ed1;i &#x111;a 02 l&#x1ea7;n m&#x1ed7;i l&#x1ea7;n 03 ng&#xe0;y.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#x1ea1;p ch&#xed; chuy&#xea;n ng&#xe0;nh: &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 14 ng&#xe0;y/ t&#xe0;i li&#x1ec7;u v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i s&#xe1;ch tham kh&#x1ea3;o: s&#x1ed1; l&#x1b0;&#x1ee3;ng t&#x1ed1;i &#x111;a m&#x1b0;&#x1ee3;n l&#xe0; 03 cu&#x1ed1;n, &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n 15 ng&#xe0;y v&#xe0; kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;      - &#x110;&#x1ed1;i v&#x1edb;i t&#xe0;i li&#x1ec7;u c&#xf3; d&#xe1;n 01 d&#x1ea5;u &#x111;&#x1ecf; (t&#xe0;i li&#x1ec7;u n&#x1ed9;i sinh, t&#xe0;i li&#x1ec7;u qu&#xfd; hi&#x1ebf;m, t&#xe0;i li&#x1ec7;u tra c&#x1ee9;u, &#x2026;), b&#xe1;o &#x2013; t&#x1ea1;p ch&#xed; kh&#xe1;c: kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c m&#x1b0;&#x1ee3;n v&#x1ec1; nh&#xe0;.&#xa;&#xa;      4. V&#x1edb;i c&#xe1;c b&#x1ea1;n &#x111;&#x1ecd;c kh&#xf4;ng thu&#x1ed9;c c&#xe1;c &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng tr&#xea;n:&#xa;&#xa;      - &#xc1;p d&#x1ee5;ng ch&#xed;nh s&#xe1;ch l&#x1b0;u th&#xf4;ng t&#x1ed1;i thi&#x1ec3;u quy &#x111;&#x1ecb;nh tr&#xea;n Ph&#x1ea7;n m&#x1ec1;m qu&#x1ea3;n l&#xfd; Th&#x1b0; vi&#x1ec7;n:&#xa;&#xa;      - S&#x1ed1; l&#x1b0;&#x1ee3;ng m&#x1b0;&#x1ee3;n t&#x1ed1;i &#x111;a v&#x1edb;i c&#xe1;c t&#xe0;i li&#x1ec7;u (tr&#x1eeb; t&#xe0;i li&#x1ec7;u thu&#x1ed9;c t&#xe0;i li&#x1ec7;u kh&#xf4;ng cho m&#x1b0;&#x1ee3;n: 03 cu&#x1ed1;n&#xa;&#xa;      - Th&#x1edd;i gian m&#x1b0;&#x1ee3;n t&#x1ed1;i &#x111;a 15 ng&#xe0;y, kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p gia h&#x1ea1;n.&#xa;&#xa;          &#x110;i&#x1ec1;u 4. &#x110;&#x1ed1;i v&#x1edb;i ph&#xf2;ng &#x111;&#x1ecd;c sa&#x301;ch, lu&#x1ead;n v&#x103;n/ kho m&#x1edf;&#xa;&#xa;Trung t&#xe2;m Th&#xf4;ng tin - Th&#x1b0; vi&#x1ec7;n c&#xf3; nh&#x1eef;ng kh&#xf4;ng gian m&#x1edf; d&#xe0;nh cho b&#x1ea1;n &#x111;&#x1ecd;c, b&#x1ea1;n &#x111;o&#x323;c &#x111;&#x1b0;&#x1ee3;c s&#x1eed; d&#x1ee5;ng m&#x1ecd;i kh&#xf4;ng gian m&#x1edf; trong th&#x1b0; vi&#x1ec7;n &#x111;&#x1ec3; &#x111;&#x1ecd;c t&#xe0;i li&#x1ec7;u.&#xa;&#xa;          B&#x1ea1;n &#x111;&#x1ecd;c t&#x1ef1; ch&#x1ecd;n t&#xe0;i li&#x1ec7;u tr&#xea;n gi&#xe1; sa&#x301;ch, theo b&#x1ea3;ng ch&#x1ec9; d&#x1eab;n chuy&#xea;n ng&#xe0;nh, kh&#xf4;ng tr&#xe1;o &#x111;&#x1ed5;i v&#x1ecb; tr&#xed; t&#xe0;i li&#x1ec7;u. B&#x1ea1;n &#x111;&#x1ecd;c &#x111;&#x1b0;&#x1ee3;c l&#x1ea5;y kh&#xf4;ng qu&#xe1; 02 cu&#x1ed1;n cho 1 l&#x1ea7;n s&#x1eed; d&#x1ee5;ng.&#xa;&#xa;          B&#x1ea1;n &#x111;&#x1ecd;c mang t&#xe0;i li&#x1ec7;u qua qu&#x1ea7;y th&#x1ee7; th&#x1b0; &#x111;&#x1ec3; ghi m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u (&#xc1;p d&#x1ee5;ng cho ghi m&#x1b0;&#x1ee3;n &#x111;&#x1ecd;c t&#x1ea1;i ch&#x1ed7; v&#xe0; ghi m&#x1b0;&#x1ee3;n v&#x1ec1; nh&#xe0;).&#xa;&#xa;          &#x110;&#x1ecd;c xong, ba&#x323;n &#x111;o&#x323;c chuy&#x1ec3;n t&#xe0;i li&#x1ec7;u qua qu&#x1ea7;y Th&#x1ee7; th&#x1b0; &#x111;&#x1ec3; ghi tr&#x1ea3; v&#xe0; x&#xea;&#x301;p t&#xe0;i li&#x1ec7;u v&#x1ec1; v&#x1ecb; tr&#xed; quy &#x111;&#x1ecb;nh t&#x1ea1;i ph&#xf2;ng &#x111;&#x1ecd;c theo h&#x1b0;&#x1a1;&#x301;ng d&#xe2;&#x303;n cu&#x309;a Thu&#x309; th&#x1b0;.&#xa;&#xa;          &#x110;i&#x1ec1;u 5. &#x110;&#x1ed1;i v&#x1edb;i tra c&#x1b0;&#x301;u ti&#x300;m tin&#xa;&#xa;          Th&#x1b0; vi&#x1ec7;n c&#xf3; h&#x1ec7; th&#x1ed1;ng danh m&#x1ee5;c v&#xe0; m&#xe1;y t&#xed;nh cho b&#x1ea1;n &#x111;&#x1ecd;c tra c&#x1ee9;u t&#xec;m tin. M&#xe1;y t&#xed;nh d&#xf9;ng cho tra c&#x1ee9;u t&#xec;m tin, b&#x1ea1;n &#x111;&#x1ecd;c kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c s&#x1eed; d&#x1ee5;ng v&#xe0;o vi&#x1ec7;c c&#xe1; nh&#xe2;n kh&#xe1;c ngo&#xe0;i vi&#x1ec7;c t&#xec;m tin. Nghi&#xea;m c&#x1ea5;m m&#x1ecd;i h&#xe0;nh vi can thi&#x1ec7;p c&#xe1; nh&#xe2;n v&#xe0;o c&#xe0;i &#x111;&#x1eb7;t m&#xe1;y t&#xed;nh, g&#xe2;y thi&#x1ec7;t h&#x1ea1;i &#x111;&#x1ebf;n h&#xea;&#x323; th&#xf4;&#x301;ng tra c&#x1b0;&#x301;u c&#x1ee7;a th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          &#x110;i&#x1ec1;u 6. &#x110;&#x1ed1;i v&#x1edb;i &#x111;&#x1ecd;c ba&#x301;o, ta&#x323;p chi&#x301;&#xa;&#xa;          Ba&#x323;n &#x111;o&#x323;c t&#x1b0;&#x323; ti&#x300;m ba&#x301;o, ta&#x323;p chi&#x301; tham kha&#x309;o &#x1a1;&#x309; tr&#xea;n gia&#x301;, m&#xf4;&#x303;i l&#xe2;&#x300;n l&#xe2;&#x301;y ba&#x301;o, ta&#x323;p chi&#x301; ra ba&#x300;n &#x111;o&#x323;c, ba&#x323;n &#x111;o&#x323;c kh&#xf4;ng &#x111;&#x1b0;&#x1a1;&#x323;c l&#xe2;&#x301;y qua&#x301; 3 t&#xea;n ba&#x301;o, hay ta&#x323;p chi&#x301;. Kh&#xf4;ng &#x111;&#x1b0;&#x1a1;&#x323;c mang ta&#x300;i li&#xea;&#x323;u ra ngoa&#x300;i pho&#x300;ng, ba&#x323;n &#x111;o&#x323;c c&#xf3; nhu c&#xe2;&#x300;u sao ch&#xe9;p ta&#x300;i li&#xea;&#x323;u, &#x111;&#x103;ng ky&#x301; v&#x1a1;&#x301;i thu&#x309; th&#x1b0; &#x111;&#x1ec3; &#x111;&#x1b0;&#x1ee3;c ph&#x1ee5;c v&#x1ee5; &#x111;&#x1ea3;m b&#x1ea3;o &#x111;&#xfa;ng Lu&#x1ead;t S&#x1edf; h&#x1eef;u tr&#xed; tu&#x1ec7;.&#xa;&#xa;          &#x110;i&#x1ec1;u 7. &#x110;&#x1ed1;i v&#x1edb;i vi&#x1ec7;c sao ch&#xe9;p t&#xe0;i li&#x1ec7;u&#xa;&#xa;          Tuy&#x1ec7;t &#x111;&#x1ed1;i kh&#xf4;ng s&#x1eed; d&#x1ee5;ng m&#xe1;y t&#xed;nh, &#x111;i&#x1ec7;n tho&#x1ea1;i hay m&#xe1;y ch&#x1ee5;p &#x1ea3;nh &#x111;&#x1ec3; sao ch&#xe9;p, ch&#x1ee5;p &#x1ea3;nh t&#xe0;i li&#x1ec7;u khi ch&#x1b0;a &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p. N&#x1ebf;u c&#xf3; nhu c&#x1ea7;u sao ch&#xe9;p ta&#x300;i li&#xea;&#x323;u, ba&#x323;n &#x111;o&#x323;c &#x111;&#x103;ng ky&#x301; v&#x1a1;&#x301;i thu&#x309; th&#x1b0; &#x111;&#xea;&#x309; &#x111;&#x1b0;&#x1a1;&#x323;c phu&#x323;c vu&#x323; &#x111;&#x1ea3;m b&#x1ea3;o &#x111;&#xfa;ng Lu&#x1ead;t S&#x1edf; h&#x1eef;u tr&#xed; tu&#x1ec7;.&#xa;&#xa;          &#x110;i&#x1ec1;u 8. &#x110;&#x1ed1;i v&#x1edb;i vi&#x1ec7;c truy c&#x1ead;p Internet - D&#x1eef; li&#x1ec7;u &#x111;i&#x1ec7;n t&#x1eed;&#xa;&#xa;          Ch&#x1ec9; &#x111;&#x1b0;&#x1ee3;c s&#x1eed; d&#x1ee5;ng m&#xe1;y t&#xed;nh &#x111;&#x1ec3; khai th&#xe1;c, t&#xec;m ki&#x1ebf;m th&#xf4;ng tin ph&#x1ee5;c v&#x1ee5; cho m&#x1ee5;c &#x111;&#xed;ch h&#x1ecd;c t&#x1ead;p v&#xe0; nghi&#xea;n c&#x1ee9;u khoa h&#x1ecd;c. Kh&#xf4;ng v&#xe0;o nh&#x1eef;ng trang Web c&#xf3; n&#x1ed9;i dung kh&#xf4;ng l&#xe0;nh m&#x1ea1;nh. Khi c&#x1ea7;n sao ch&#xe9;p d&#x1eef; li&#x1ec7;u &#x111;i&#x1ec7;n t&#x1eed;, b&#x1ea1;n &#x111;&#x1ecd;c li&#xea;n h&#x1ec7; v&#x1edb;i ca&#x301;n b&#xf4;&#x323; th&#x1b0; vi&#xea;&#x323;n &#x111;&#x1ec3; &#x111;&#x1b0;&#x1ee3;c ph&#x1ee5;c v&#x1ee5;.&#xa;&#xa;          &#x110;i&#x1ec1;u 9. Th&#x1ee7; t&#x1ee5;c m&#x1b0;&#x1ee3;n s&#xe1;ch&#xa;&#xa;          - Ba&#x323;n &#x111;o&#x323;c pha&#x309;i xu&#x1ea5;t tr&#xec;nh th&#x1ebb; sinh vi&#xea;n/t&#xe0;i kho&#x1ea3;n b&#x1ea1;n &#x111;&#x1ecd;c cho Th&#x1ee7; th&#x1b0; tr&#x1b0;&#x1edb;c khi m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u.&#xa;&#xa;          - M&#x1b0;&#x1ee3;n tr&#x1ef1;c ti&#x1ebf;p: B&#x1ea1;n &#x111;&#x1ecd;c ch&#x1ecd;n t&#xe0;i li&#x1ec7;u v&#xe0; ti&#x1ebf;n h&#xe0;nh ghi m&#x1b0;&#x1ee3;n v&#x1edb;i Th&#x1ee7; th&#x1b0; t&#x1ea1;i qu&#x1ea7;y.&#xa;&#xa;          - M&#x1b0;&#x1ee3;n tr&#x1ef1;c tuy&#x1ebf;n: B&#x1ea1;n &#x111;&#x1ecd;c &#x111;&#x1eb7;t m&#x1b0;&#x1ee3;n t&#xe0;i li&#x1ec7;u tr&#x1ef1;c tuy&#x1ebf;n, &#x111;&#x1ebf;n Trung t&#xe2;m Th&#xf4;ng tin &#x2013; Th&#x1b0; vi&#x1ec7;n nh&#x1ead;n s&#xe1;ch theo th&#xf4;ng tin &#x111;&#xe3; nh&#x1ead;n &#x111;&#x1b0;&#x1ee3;c tr&#xea;n T&#xe0;i kho&#x1ea3;n b&#x1ea1;n &#x111;&#x1ecd;c.&#xa;&#xa;          - Ki&#x1ec3;m tra s&#x1ed1; l&#x1b0;&#x1ee3;ng v&#xe0; t&#xec;nh tr&#x1ea1;ng t&#xe0;i li&#x1ec7;u tr&#x1b0;&#x1edb;c khi r&#x1a1;&#x300;i kh&#x1ecf;i Trung t&#xe2;m Th&#xf4;ng tin &#x2013; Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          &#x110;i&#x1ec1;u 10. C&#xe1;c h&#xec;nh th&#x1ee9;c x&#x1eed; l&#xfd; vi ph&#x1ea1;m n&#x1ed9;i quy&#xa;&#xa;          Ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng vi ph&#x1ea1;m c&#xe1;c quy &#x111;&#x1ecb;nh trong N&#x1ed9;i quy n&#xe0;y, t&#xf9;y theo tr&#x1b0;&#x1edd;ng h&#x1ee3;p, t&#xed;nh ch&#x1ea5;t, m&#x1ee9;c &#x111;&#x1ed9; vi ph&#x1ea1;m m&#xe0; &#xe1;p d&#x1ee5;ng nh&#x1eef;ng h&#xec;nh th&#x1ee9;c x&#x1eed; l&#xfd; nh&#x1b0; sau:&#xa;&#xa;          - Kh&#xf3;a t&#xe0;i kho&#x1ea3;n t&#x1ea1;m th&#x1edd;i ho&#x1eb7;c &#x111;&#xec;nh ch&#x1ec9; quy&#x1ec1;n s&#x1eed; d&#x1ee5;ng c&#xe1;c s&#x1ea3;n ph&#x1ea9;m, d&#x1ecb;ch v&#x1ee5; c&#x1ee7;a Trung t&#xe2;m TTTV.&#xa;&#xa;          - X&#x1eed; ph&#x1ea1;t h&#xe0;nh ch&#xed;nh.&#xa;&#xa;          - B&#x1ed3;i th&#x1b0;&#x1edd;ng thi&#x1ec7;t h&#x1ea1;i b&#x1eb1;ng hi&#x1ec7;n v&#x1ead;t ho&#x1eb7;c b&#x1eb1;ng ti&#x1ec1;n.&#xa;&#xa;          - M&#x1ee9;c ph&#x1ea1;t v&#xe0; b&#x1ed3;i th&#x1b0;&#x1edd;ng b&#x1eb1;ng ti&#x1ec1;n &#x111;&#x1ed1;i v&#x1edb;i c&#xe1;c tr&#x1b0;&#x1edd;ng h&#x1ee3;p c&#x1ee5; th&#x1ec3; &#x111;&#x1b0;&#x1ee3;c th&#x1ef1;c hi&#x1ec7;n theo quy &#x111;&#x1ecb;nh c&#x1ee7;a Nh&#xe0; tr&#x1b0;&#x1edd;ng.&#xa;&#xa;          - Trong tr&#x1b0;&#x1edd;ng h&#x1ee3;p vi ph&#x1ea1;m nghi&#xea;m tr&#x1ecd;ng, ng&#x1b0;&#x1edd;i vi ph&#x1ea1;m c&#xf3; th&#x1ec3; b&#x1ecb; k&#x1ef7; lu&#x1ead;t v&#xe0; truy c&#x1ee9;u tr&#xe1;ch nhi&#x1ec7;m h&#xec;nh s&#x1ef1; theo quy &#x111;&#x1ecb;nh c&#x1ee7;a ph&#xe1;p lu&#x1ead;t.&#xa;&#xa;          &#x110;i&#x1ec1;u 11. B&#x1ea3;o qu&#x1ea3;n t&#xe0;i li&#x1ec7;u, t&#xe0;i s&#x1ea3;n, khen th&#x1b0;&#x1edf;ng, k&#x1ef7; lu&#x1ead;t&#xa;&#xa;          - Tuy&#x1ec7;t &#x111;&#x1ed1;i kh&#xf4;ng mang t&#xe0;i li&#x1ec7;u ra kh&#x1ecf;i ph&#xf2;ng &#x111;&#x1ecd;c khi ch&#x1b0;a &#x111;&#x1b0;&#x1ee3;c ph&#xe9;p c&#x1ee7;a c&#xe1;n b&#x1ed9; th&#x1b0; vi&#x1ec7;n. Kh&#xf4;ng tr&#xe1;o &#x111;&#x1ed5;i, c&#x1eaf;t x&#xe9;n, &#x111;&#xe1;nh d&#x1ea5;u l&#xe0;m r&#xe1;ch n&#xe1;t, h&#x1b0; h&#x1ecf;ng t&#xe0;i li&#x1ec7;u; kh&#xf4;ng vi&#x1ebf;t nh&#xe1;p ho&#x1eb7;c ghi ch&#xe9;p v&#xe0;o c&#xe1;c trang s&#xe1;ch, b&#xe1;o, t&#x1ea1;p ch&#xed; v&#xe0; c&#xe1;c t&#xe0;i li&#x1ec7;u kh&#xe1;c.&#xa;&#xa;          - Kh&#xf4;ng &#x111;&#x1b0;&#x1ee3;c sao ch&#x1ee5;p tr&#xe1;i ph&#xe9;p c&#xe1;c t&#xe0;i li&#x1ec7;u c&#x1ee7;a th&#x1b0; vi&#x1ec7;n. Khi s&#x1eed; d&#x1ee5;ng m&#xe1;y t&#xed;nh tra c&#x1ee9;u, danh m&#x1ee5;c ... ph&#x1ea3;i th&#x1b0;&#x323;c hi&#xea;&#x323;n &#x111;&#xfa;ng h&#x1b0;&#x1edb;ng d&#x1eab;n. Nghi&#xea;m c&#x1ea5;m m&#x1ecd;i h&#xe0;nh vi g&#xe2;y thi&#x1ec7;t h&#x1ea1;i &#x111;&#x1ebf;n v&#x1ed1;n t&#xe0;i li&#x1ec7;u, t&#xe0;i s&#x1ea3;n v&#xe0; c&#x1a1; s&#x1edf; v&#x1ead;t ch&#x1ea5;t c&#x1ee7;a th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          - B&#x1ea1;n &#x111;&#x1ecd;c ph&#x1ea3;i nghi&#xea;m ch&#x1ec9;nh ch&#x1ea5;p h&#xe0;nh nh&#x1eef;ng quy &#x111;&#x1ecb;nh tr&#xea;n &#x111;&#xe2;y. M&#x1ecd;i vi ph&#x1ea1;m, tu&#x1ef3; theo m&#x1ee9;c &#x111;&#x1ed9; s&#x1ebd; ch&#x1ecb;u x&#x1eed; l&#xfd; theo c&#xe1;c h&#xec;nh th&#x1ee9;c k&#x1ef7; lu&#x1ead;t sau:&#xa;&#xa;          + Nh&#x1eaf;c nh&#x1edf;, c&#x1ea3;nh c&#xe1;o&#xa;&#xa;          + &#x110;&#xec;nh ch&#x1ec9; quy&#x1ec1;n s&#x1eed; d&#x1ee5;ng th&#x1b0; vi&#x1ec7;n t&#x1eeb; 10 ng&#xe0;y &#x111;&#x1ebf;n v&#x129;nh vi&#x1ec5;n.&#xa;&#xa;          + B&#x1ed3;i th&#x1b0;&#x1edd;ng thi&#x1ec7;t h&#x1ea1;i. M&#x1ee9;c b&#x1ed3;i th&#x1b0;&#x1edd;ng do Nh&#xe0; tr&#x1b0;&#x1edd;ng xem x&#xe9;t quy&#x1ebf;t &#x111;&#x1ecb;nh.&#xa;&#xa;          + &#x110;&#x1ec1; ngh&#x1ecb; nh&#xe0; tr&#x1b0;&#x1edd;ng c&#xf3; h&#xec;nh th&#x1ee9;c x&#x1eed; l&#xfd; k&#x1ef7; lu&#x1ead;t.&#xa;&#xa;          + &#x110;&#x1ec1; ngh&#x1ecb; truy t&#x1ed1; tr&#x1b0;&#x1edb;c ph&#xe1;p lu&#x1ead;t.&#xa;&#xa;          - Hoan ngh&#xea;nh v&#xe0; &#x1b0;u ti&#xea;n ph&#x1ee5;c v&#x1ee5; b&#x1ea1;n &#x111;&#x1ecd;c th&#x1ef1;c hi&#x1ec7;n t&#x1ed1;t n&#x1ed9;i quy c&#x1ee7;a Trung t&#xe2;m TTTV v&#xe0; ph&#xe1;t hi&#x1ec7;n nh&#x1eef;ng vi ph&#x1ea1;m c&#x1ee7;a b&#x1ea1;n &#x111;&#x1ecd;c kh&#xe1;c.&#xa;&#xa;          - Khi c&#xf3; &#xfd; ki&#x1ebf;n &#x111;&#xf3;ng g&#xf3;p v&#x1ec1; t&#xec;nh h&#xec;nh t&#xe0;i li&#x1ec7;u ho&#x1eb7;c t&#xe1;c phong l&#xe0;m vi&#x1ec7;c c&#x1ee7;a c&#xe1;n b&#x1ed9; th&#x1b0; vi&#x1ec7;n, c&#xe1;c &#xfd; ki&#x1ebf;n c&#x1ee7;a b&#x1ea1;n &#x111;&#x1ecd;c xin g&#x1eed;i va&#x300;o: &quot;H&#xf2;m th&#x1b0; g&#xf3;p &#xfd;&quot; t&#x1ea1;i Trung t&#xe2;m TTTV, hay h&#x1ed9;p th&#x1b0; &#x111;i&#x1ec7;n t&#x1eed;: library@phenikaa-uni.edu.vn (Ch&#xfa; &#xfd;: Th&#x1b0; g&#xf3;p &#xfd; c&#x1ea7;n ghi r&#xf5; H&#x1ecd; t&#xea;n, &#x111;&#x1a1;n v&#x1ecb;, l&#x1edb;p. M&#x1ecd;i th&#x1b0; n&#x1eb7;c danh coi nh&#x1b0; kh&#xf4;ng c&#xf3; gi&#xe1; tr&#x1ecb;).&#xa;&#xa;          - C&#xe1;c tr&#x1b0;&#x1edd;ng h&#x1ee3;p khen th&#x1b0;&#x1edf;ng:&#xa;&#xa;          + Ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng c&#xf3; l&#x1b0;&#x1ee3;t s&#x1eed; d&#x1ee5;ng Th&#x1b0; vi&#x1ec7;n nhi&#x1ec1;u nh&#x1ea5;t.&#xa;&#xa;          + Ng&#x1b0;&#x1edd;i s&#x1eed; d&#x1ee5;ng tham gia t&#xed;ch c&#x1ef1;c v&#xe0;o c&#xe1;c ho&#x1ea1;t &#x111;&#x1ed9;ng c&#x1ee7;a Th&#x1b0; vi&#x1ec7;n.&#xa;&#xa;          + C&#xe1;c h&#xec;nh th&#x1ee9;c khen th&#x1b0;&#x1edf;ng: tuy&#xea;n d&#x1b0;&#x1a1;ng, t&#x1eb7;ng qu&#xe0;."/>
+                                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[20, 20, 20, 20]"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel3">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Qu&#x1ea3;n l&#xfd; s&#xe1;ch">
+                    <Property name="tabTitle" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; s&#xe1;ch"/>
+                    <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/book.png"/>
+                    </Property>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cc" green="cc" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" min="-2" pref="64" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="typeSearch" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane1" min="-2" pref="351" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="typeSubjectFilter" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="bookDetails" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="createBook" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="editBook" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                      <Component id="buttonSearch" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="109" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                                      <Component id="buttonSearch" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel2" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="typeSearch" min="-2" pref="32" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="bookDetails" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="typeSubjectFilter" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="createBook" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="editBook" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="jButton2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="525" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" pref="510" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLabel2">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m theo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="typeSearch">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="0"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="T&#x1ea5;t c&#x1ea3;"/>
+                            <StringItem index="1" value="T&#xea;n S&#xe1;ch"/>
+                            <StringItem index="2" value="T&#xea;n T&#xe1;c Gi&#x1ea3;"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="typeSearchActionPerformed"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextPane" name="inputSearch">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                                <BevelBorder/>
+                              </Border>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Times New Roman" size="18" style="0"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="buttonSearch">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/search-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="buttonSearchMouseClicked"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="bookDetails">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="cc" green="ff" red="cc" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/infor-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Xem chi ti&#x1ebf;t"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bookDetailsMouseClicked"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookDetailsActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="typeSubjectFilter">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="0"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="9">
+                            <StringItem index="0" value="T&#x1ea5;t c&#x1ea3;"/>
+                            <StringItem index="1" value="S&#xe1;ch Ch&#xed;nh tr&#x1ecb; &#x2013; ph&#xe1;p lu&#x1ead;t"/>
+                            <StringItem index="2" value="S&#xe1;ch Khoa h&#x1ecd;c c&#xf4;ng ngh&#x1ec7; &#x2013; Kinh t&#x1ebf;"/>
+                            <StringItem index="3" value="S&#xe1;ch V&#x103;n h&#x1ecd;c ngh&#x1ec7; thu&#x1ead;t"/>
+                            <StringItem index="4" value="S&#xe1;ch V&#x103;n h&#xf3;a x&#xe3; h&#x1ed9;i &#x2013; L&#x1ecb;ch s&#x1eed;"/>
+                            <StringItem index="5" value="S&#xe1;ch Gi&#xe1;o tr&#xec;nh"/>
+                            <StringItem index="6" value="S&#xe1;ch Truy&#x1ec7;n, ti&#x1ec3;u thuy&#x1ebf;t"/>
+                            <StringItem index="7" value="S&#xe1;ch T&#xe2;m l&#xfd;, t&#xe2;m linh, t&#xf4;n gi&#xe1;o"/>
+                            <StringItem index="8" value="S&#xe1;ch thi&#x1ebf;u nhi"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel3">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Th&#x1ec3; lo&#x1ea1;i"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="tableListBook">
+                          <Properties>
+                            <Property name="autoCreateRowSorter" type="boolean" value="true"/>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="fa" green="e8" red="fe" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Times New Roman" size="15" style="0"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="6" rowCount="0">
+                                <Column editable="false" title="M&#xe3; s&#xe1;ch" type="java.lang.String"/>
+                                <Column editable="false" title="T&#xea;n s&#xe1;ch" type="java.lang.Object"/>
+                                <Column editable="false" title="Nh&#xe0; xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="N&#x103;m xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="T&#xe1;c gi&#x1ea3;" type="java.lang.Object"/>
+                                <Column editable="false" title="Th&#x1ec3; lo&#x1ea1;i" type="java.lang.Object"/>
+                              </Table>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                            <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[5, 5]"/>
+                            </Property>
+                            <Property name="rowHeight" type="int" value="30"/>
+                            <Property name="showGrid" type="boolean" value="true"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="editBook">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/edit-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="S&#x1eed;a"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="editBookMouseClicked"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/delete-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseClicked"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="createBook">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="ff" red="33" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/plus-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Th&#xea;m"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="createBookMouseClicked"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel5">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Qu&#x1ea3;n l&#xfd; phi&#x1ebf;u m&#x1b0;&#x1ee3;n">
+                    <Property name="tabTitle" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; phi&#x1ebf;u m&#x1b0;&#x1ee3;n"/>
+                    <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/callCard-icon.png"/>
+                    </Property>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTabbedPane3" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTabbedPane3" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JTabbedPane" name="jTabbedPane3">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="cc" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="24" style="1"/>
+                    </Property>
+                    <Property name="opaque" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanel9">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="Phi&#x1ebf;u m&#x1b0;&#x1ee3;n">
+                            <Property name="tabTitle" type="java.lang.String" value="Phi&#x1ebf;u m&#x1b0;&#x1ee3;n"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanel6">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ee" green="ee" red="f6" type="rgb"/>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jScrollPane7" pref="989" max="32767" attributes="0"/>
+                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="inputCallCardSearch" min="-2" pref="250" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel6" min="-2" pref="99" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="isReturnBook" min="-2" pref="110" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="statusReturnBook" min="-2" pref="100" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace pref="107" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputCallCardSearch" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="jButton1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="jButton4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="jButton5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="jButton6" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel6" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="isReturnBook" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="statusReturnBook" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jScrollPane7" pref="495" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+                              <AuxValues>
+                                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                              </AuxValues>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JTable" name="tableCallCard">
+                                  <Properties>
+                                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                      <Table columnCount="11" rowCount="4">
+                                        <Column editable="true" title="M&#xe3; M&#x1b0;&#x1ee3;n S&#xe1;ch" type="java.lang.String"/>
+                                        <Column editable="true" title="Th&#x1ebb; Th&#x1b0; Vi&#x1ec7;n" type="java.lang.String"/>
+                                        <Column editable="true" title="Ng&#x1b0;&#x1edd;i M&#x1b0;&#x1ee3;n" type="java.lang.String"/>
+                                        <Column editable="true" title="M&#xe3; S&#xe1;ch" type="java.lang.String"/>
+                                        <Column editable="true" title="T&#xea;n S&#xe1;ch" type="java.lang.String"/>
+                                        <Column editable="true" title="Ng&#xe0;y M&#x1b0;&#x1ee3;n" type="java.lang.String"/>
+                                        <Column editable="true" title="S&#x1ed1; Ng&#xe0;y M&#x1b0;&#x1ee3;n" type="java.lang.String"/>
+                                        <Column editable="true" title="Ng&#xe0;y Tr&#x1ea3;" type="java.lang.String"/>
+                                        <Column editable="true" title="T&#xec;nh Tr&#x1ea1;ng S&#xe1;ch" type="java.lang.String"/>
+                                        <Column editable="true" title="Ti&#x1ec1;n Ph&#x1ea1;t" type="java.lang.Long"/>
+                                        <Column editable="true" title="Ghi Ch&#xfa;" type="java.lang.String"/>
+                                      </Table>
+                                    </Property>
+                                    <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                      <Dimension value="[5, 5]"/>
+                                    </Property>
+                                    <Property name="rowHeight" type="int" value="30"/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Component class="javax.swing.JTextField" name="inputCallCardSearch">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="15" style="0"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton1">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/search-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel6">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="T&#xec;nh tr&#x1ea1;ng s&#xe1;ch"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JComboBox" name="isReturnBook">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="0"/>
+                                </Property>
+                                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                                  <StringArray count="3">
+                                    <StringItem index="0" value="T&#x1ea5;t c&#x1ea3;"/>
+                                    <StringItem index="1" value="Ch&#x1b0;a tr&#x1ea3;"/>
+                                    <StringItem index="2" value="&#x110;&#xe3; tr&#x1ea3;"/>
+                                  </StringArray>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="isReturnBookItemStateChanged"/>
+                                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="isReturnBookPropertyChange"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                              </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JComboBox" name="statusReturnBook">
+                              <Properties>
+                                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                                  <StringArray count="4">
+                                    <StringItem index="0" value="T&#x1ea5;t c&#x1ea3;"/>
+                                    <StringItem index="1" value="B&#xec;nh th&#x1b0;&#x1edd;ng"/>
+                                    <StringItem index="2" value="H&#x1b0; h&#x1ecf;ng"/>
+                                    <StringItem index="3" value="L&#xe0;m m&#x1ea5;t"/>
+                                  </StringArray>
+                                </Property>
+                                <Property name="enabled" type="boolean" value="false"/>
+                              </Properties>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                              </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton4">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="cc" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/create-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="T&#x1ea1;o Phi&#x1ebf;u M&#x1b0;&#x1ee3;n"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton4MouseClicked"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton5">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="99" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/return-book.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Tr&#x1ea3; s&#xe1;ch"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton5MouseClicked"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton6">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="cc" green="ff" red="cc" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/infor-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Xem Chi Ti&#x1ebf;t"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton6MouseClicked"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel10">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="Danh s&#xe1;ch ch&#x1edd; m&#x1b0;&#x1ee3;n">
+                            <Property name="tabTitle" type="java.lang.String" value="Danh s&#xe1;ch ch&#x1edd; m&#x1b0;&#x1ee3;n"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel11" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jPanel11" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanel11">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f5" green="ff" red="ec" type="rgb"/>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jScrollPane6" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="typeSearchAwait" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="inputSearchAwait" min="-2" pref="250" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="buttonSearchAwait" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="confirmAwait" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="deleteAwait" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="114" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="typeSearchAwait" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                                  <Component id="inputSearchAwait" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                                  <Component id="confirmAwait" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                                  <Component id="deleteAwait" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="buttonSearchAwait" min="-2" pref="30" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane6" pref="504" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+                              <AuxValues>
+                                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                              </AuxValues>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JTable" name="tableAwait">
+                                  <Properties>
+                                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                      <Table columnCount="10" rowCount="0">
+                                        <Column editable="false" title="ID" type="java.lang.Integer"/>
+                                        <Column editable="false" title="Ng&#x1b0;&#x1edd;i M&#x1b0;&#x1ee3;n" type="java.lang.String"/>
+                                        <Column editable="false" title="Th&#x1ebb; Th&#x1b0; Vi&#x1ec7;n" type="java.lang.Object"/>
+                                        <Column editable="false" title="M&#xe3; S&#xe1;ch" type="java.lang.Object"/>
+                                        <Column editable="false" title="T&#xea;n S&#xe1;ch" type="java.lang.Object"/>
+                                        <Column editable="false" title="Nh&#xe0; Xu&#x1ea5;t B&#x1ea3;n" type="java.lang.Object"/>
+                                        <Column editable="false" title="N&#x103;m Xu&#x1ea5;t B&#x1ea3;n" type="java.lang.Object"/>
+                                        <Column editable="false" title="T&#xe1;c Gi&#x1ea3;" type="java.lang.Object"/>
+                                        <Column editable="false" title="Gi&#xe1; Ti&#x1ec1;n" type="java.lang.Object"/>
+                                        <Column editable="false" title="S&#x1ed1; ng&#xe0;y m&#x1b0;&#x1ee3;n" type="java.lang.Object"/>
+                                      </Table>
+                                    </Property>
+                                    <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                      <Dimension value="[5, 5]"/>
+                                    </Property>
+                                    <Property name="rowHeight" type="int" value="30"/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Component class="javax.swing.JLabel" name="jLabel5">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="15" style="0"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m theo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JComboBox" name="typeSearchAwait">
+                              <Properties>
+                                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                                  <StringArray count="2">
+                                    <StringItem index="0" value="T&#xea;n &#x110;&#x1ed9;c Gi&#x1ea3;"/>
+                                    <StringItem index="1" value="Th&#x1ebb; Th&#x1b0; Vi&#x1ec7;n"/>
+                                  </StringArray>
+                                </Property>
+                              </Properties>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                              </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="inputSearchAwait">
+                            </Component>
+                            <Component class="javax.swing.JButton" name="buttonSearchAwait">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="cc" green="ff" red="0" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="15" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/search-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="buttonSearchAwaitMouseClicked"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="confirmAwait">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="0" green="ff" red="0" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/confirm-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Duy&#x1ec7;t"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="confirmAwaitMouseClicked"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="deleteAwait">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Segoe UI" size="14" style="1"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/delete-icon.png"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="deleteAwaitMouseClicked"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Qu&#x1ea3;n l&#xfd; &#x111;&#x1ed9;c gi&#x1ea3;">
+                    <Property name="tabTitle" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; &#x111;&#x1ed9;c gi&#x1ea3;"/>
+                    <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/icons8-library-30.png"/>
+                    </Property>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel8">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="d3" type="rgb"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane5" pref="982" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="typeSearchUser" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="inputSearchUser" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="createUser" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="editUser" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="deleteUser" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="typeSearchUser" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="inputSearchUser" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="createUser" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="jButton3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="editUser" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="deleteUser" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jScrollPane5" pref="535" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="tableUser">
+                          <Properties>
+                            <Property name="autoCreateRowSorter" type="boolean" value="true"/>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="eb" green="ff" red="eb" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Segoe UI" size="15" style="0"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="8" rowCount="0">
+                                <Column editable="false" title="Th&#x1ebb; th&#x1b0; vi&#x1ec7;n" type="java.lang.String"/>
+                                <Column editable="false" title="H&#x1ecd; v&#xe0; t&#xea;n" type="java.lang.String"/>
+                                <Column editable="false" title="Gi&#x1edb;i t&#xed;nh" type="java.lang.String"/>
+                                <Column editable="false" title="Qu&#xea; qu&#xe1;n" type="java.lang.String"/>
+                                <Column editable="false" title="Ng&#xe0;y sinh" type="java.lang.String"/>
+                                <Column editable="false" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.String"/>
+                                <Column editable="false" title="S&#x1ed1; s&#xe1;ch &#x111;ang m&#x1b0;&#x1ee3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="S&#x1ed1; s&#xe1;ch &#x111;&#xe3; m&#x1b0;&#x1ee3;n" type="java.lang.Object"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[5, 5]"/>
+                            </Property>
+                            <Property name="rowHeight" type="int" value="30"/>
+                            <Property name="showGrid" type="boolean" value="true"/>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="15" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m theo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="typeSearchUser">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="15" style="0"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="2">
+                            <StringItem index="0" value="H&#x1ecd; v&#xe0; t&#xea;n"/>
+                            <StringItem index="1" value="Th&#x1ebb; th&#x1b0; vi&#x1ec7;n"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputSearchUser">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="createUser">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="ff" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="T&#x1ea1;o t&#xe0;i kho&#x1ea3;n"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="createUserMouseClicked"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton3">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="cc" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Images/search-user-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="T&#xec;m ki&#x1ebf;m"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton3MouseClicked"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="editUser">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="S&#x1eed;a"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="editUserMouseClicked"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="deleteUser">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="0" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Segoe UI" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="deleteUserMouseClicked"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

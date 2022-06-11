@@ -132,4 +132,22 @@ public class AwaitingApprovalDAO {
             e.printStackTrace();
         }
     }
+        
+    public int numberOfAwtingApprovalByUser(String libraryCard){
+        String SQL = "SELECT * FROM `AwaitingApproval` WHERE `libraryCard` = ?";
+        int result=0;
+        try {
+            Connection connection = JDBC.Connection();
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, libraryCard);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                ++result;
+            }
+             connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

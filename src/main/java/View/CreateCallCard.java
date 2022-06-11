@@ -1,5 +1,6 @@
 package View;
 
+import DAO.CallCardDAO;
 import Entity.Book;
 import Entity.CallCard;
 import Entity.User;
@@ -12,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Admin
+ * @author Phong Lu Minh
  */
 public class CreateCallCard extends javax.swing.JFrame {
 
@@ -117,7 +118,9 @@ public class CreateCallCard extends javax.swing.JFrame {
         tableBook.setRowHeight(30);
         jScrollPane2.setViewportView(tableBook);
 
+        sreachUserBtn.setBackground(new java.awt.Color(102, 204, 255));
         sreachUserBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        sreachUserBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-user-icon.png"))); // NOI18N
         sreachUserBtn.setText("Tìm kiếm");
         sreachUserBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -125,7 +128,9 @@ public class CreateCallCard extends javax.swing.JFrame {
             }
         });
 
+        searchBookBtn.setBackground(new java.awt.Color(51, 204, 255));
         searchBookBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        searchBookBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-icon.png"))); // NOI18N
         searchBookBtn.setText("Tìm kiếm");
         searchBookBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -133,7 +138,9 @@ public class CreateCallCard extends javax.swing.JFrame {
             }
         });
 
+        chooserBook.setBackground(new java.awt.Color(102, 255, 102));
         chooserBook.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        chooserBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/confirm-icon.png"))); // NOI18N
         chooserBook.setText("Chọn");
         chooserBook.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -141,7 +148,9 @@ public class CreateCallCard extends javax.swing.JFrame {
             }
         });
 
+        chooseUser.setBackground(new java.awt.Color(51, 255, 51));
         chooseUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        chooseUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/confirm-icon.png"))); // NOI18N
         chooseUser.setText("Chọn");
         chooseUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -175,6 +184,7 @@ public class CreateCallCard extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Ngày mượn");
 
+        confirm.setBackground(new java.awt.Color(153, 255, 204));
         confirm.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         confirm.setText("Xác nhận");
         confirm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -183,8 +193,14 @@ public class CreateCallCard extends javax.swing.JFrame {
             }
         });
 
+        exit.setBackground(new java.awt.Color(255, 255, 204));
         exit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         exit.setText("Thoát");
+        exit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                exitMouseClicked(evt);
+            }
+        });
 
         mess.setFont(new java.awt.Font("Times New Roman", 3, 15)); // NOI18N
         mess.setForeground(new java.awt.Color(255, 0, 0));
@@ -233,13 +249,10 @@ public class CreateCallCard extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(libraryCard)
                                     .addComponent(bookId, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                                    .addComponent(borrowedDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(borrowedDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(mess, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(392, 392, 392)
-                .addComponent(mess, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,7 +262,7 @@ public class CreateCallCard extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(inputSearchUser)
                         .addComponent(chooseUser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(sreachUserBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(sreachUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(inputSearchBook)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -277,7 +290,7 @@ public class CreateCallCard extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(confirm, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
                     .addComponent(exit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -348,14 +361,23 @@ public class CreateCallCard extends javax.swing.JFrame {
             CallCard callCard = new CallCard();
             User user = homeLibrarian.userDAO.findByLibraryCard(libraryCard.getText());
             Book book = homeLibrarian.booksDAO.findByBookId(bookId.getText());
+           if(homeLibrarian.callCardDAO.numberOfBorrowingBooksByUser(libraryCard.getText())>=5){
+                mess.setText(user.getFullname()+" đã mượn quá số lần !");
+           }
+           else{
             LocalDate borrowedDate = LocalDate.of(this.borrowedDate.getDate().getYear()+1900,this.borrowedDate.getDate().getMonth()+1,this.borrowedDate.getDate().getDate());
             callCard.setBook(book);
             callCard.setUser(user);
             callCard.setBorrowedDate(borrowedDate);
             homeLibrarian.callCardDAO.save(callCard);
             homeLibrarian.resetTableCallCard();
-        }
+        }}
     }//GEN-LAST:event_confirmMouseClicked
+
+    private void exitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_exitMouseClicked
 
     
         public void resetTableBooks(FilterForm filterForm) {

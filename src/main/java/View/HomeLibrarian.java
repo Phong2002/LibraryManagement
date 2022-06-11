@@ -279,14 +279,14 @@ public class HomeLibrarian extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Mã sách", "Tên sách", "Nhà xuất bản", "Năm xuất bản", "Tác giả", "Thể loại"
+                "Mã sách", "Tên sách", "Nhà xuất bản", "Năm xuất bản", "Tác giả", "Thể loại", "Số sách còn lại"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+                java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false, false, false, true
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -420,6 +420,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(246, 238, 238));
 
+        tableCallCard.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         tableCallCard.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -574,6 +575,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
 
         jPanel11.setBackground(new java.awt.Color(236, 255, 245));
 
+        tableAwait.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         tableAwait.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -709,7 +711,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
 
         tableUser.setAutoCreateRowSorter(true);
         tableUser.setBackground(new java.awt.Color(235, 255, 235));
-        tableUser.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tableUser.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         tableUser.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1154,7 +1156,8 @@ public class HomeLibrarian extends javax.swing.JFrame {
         DefaultTableModel tbBooks = (DefaultTableModel) tableListBook.getModel();
         tbBooks.setRowCount(0);
         for (Book book : listBook) {
-            tbBooks.addRow(new Object[]{book.getBookId(), book.getName(), book.getPublisher(), book.getYearOfPublisher(), book.getAuthor(), book.getSubject()});
+            int numberOfBook = book.getTotalQuantity()-callCardDAO.numberOfBorrowingBooksByBookId(book.getBookId());
+            tbBooks.addRow(new Object[]{book.getBookId(), book.getName(), book.getPublisher(), book.getYearOfPublisher(), book.getAuthor(), book.getSubject(),numberOfBook});
         }
     }
 
@@ -1196,6 +1199,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
             
             
         }
+        resetTableBooks(filterBook);
     }
 
     /**

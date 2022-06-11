@@ -3,6 +3,8 @@ package View;
 import DAO.BooksDAO;
 import Entity.AwaitingApproval;
 import Entity.Book;
+import Entity.CallCard;
+import DAO.CallCardDAO;
 import Form.FilterForm;
 
 /**
@@ -15,31 +17,59 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import DAO.AwaitingApprovalDAO;
+import DAO.ReturnBookDAO;
+import Entity.ReturnBook;
+import java.awt.Color;
 import javax.swing.JFrame;
 public class HomeBorrower extends javax.swing.JFrame {
 
     private User user;
     private List<AwaitingApproval> picks = new ArrayList<>();
     private List<AwaitingApproval> awaitingApprovalList;
-
+    private  AwaitingApprovalDAO awaitingApprovalDAO;
+    private CallCardDAO callCardDAO;
+    private int numberOfBooksBorrowing;
+    private BooksDAO booksDAO;
     /**
      * Creates new form HomLibrarian
      */
     public HomeBorrower(User user) {
         this.user = user;
         initComponents();
+        
         FilterForm filterForm = new FilterForm();
-        BooksDAO booksDAO = new BooksDAO();
+        booksDAO = new BooksDAO();
         List<Book> listBook = booksDAO.findAll(filterForm);
-        AwaitingApprovalDAO awaitingApprovalDAO = new AwaitingApprovalDAO();
+        awaitingApprovalDAO = new AwaitingApprovalDAO();
+        callCardDAO = new CallCardDAO();
         awaitingApprovalList = awaitingApprovalDAO.findByLibraryCard(user.getLibraryCard());
         DefaultTableModel tbBooks = (DefaultTableModel) tableListBook.getModel();
         tbBooks.setRowCount(0);
         for (Book book : listBook) {
-            tbBooks.addRow(new Object[]{book.getBookId(), book.getName(), book.getPublisher(), book.getYearOfPublisher(), book.getAuthor(), book.getSubject()});
+            int numberOfBook = book.getTotalQuantity()-callCardDAO.numberOfBorrowingBooksByBookId(book.getBookId());
+            tbBooks.addRow(new Object[]{book.getBookId(), book.getName(), book.getPublisher(), book.getYearOfPublisher(), book.getAuthor(), book.getSubject(),numberOfBook});
         }
+        
+        ReturnBookDAO returnBookDAO = new ReturnBookDAO();
         ReloadAwaitingApproval();
-
+        List<CallCard> callCards = callCardDAO.findByLibraryCard(user.getLibraryCard());
+        DefaultTableModel tbHistory = (DefaultTableModel) tableHistory.getModel();
+        tbHistory.setRowCount(0);
+        for (CallCard callCard : callCards) {
+            ReturnBook returnBook = returnBookDAO.findByCallCardId(callCard.getCallCardId());
+            if(returnBook.getReturnBookId()==null){
+                tbHistory.addRow(new Object[]{callCard.getCallCardId(),callCard.getBorrowedDate().toString(),callCard.getBook().getName(),
+                callCard.getBook().getPublisher(),callCard.getBook().getYearOfPublisher(),callCard.getBook().getAuthor(),callCard.getBorrowedDay(),
+                "Chưa trả"});
+            }
+            else{
+                tbHistory.addRow(new Object[]{callCard.getCallCardId(),callCard.getBorrowedDate().toString(),callCard.getBook().getName(),
+                callCard.getBook().getPublisher(),callCard.getBook().getYearOfPublisher(),callCard.getBook().getAuthor(),callCard.getBorrowedDay(),
+                returnBook.getPayDay().toString(),returnBook.getFines(),returnBook.getNote()});
+            }
+            
+            
+        }
     }
 
     public HomeBorrower() {
@@ -90,7 +120,11 @@ public class HomeBorrower extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         addToAwaiting = new javax.swing.JButton();
+        number = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        tableHistory = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,11 +191,11 @@ public class HomeBorrower extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1301, Short.MAX_VALUE)
+            .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1220, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 614, Short.MAX_VALUE)
+            .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout homeLayout = new javax.swing.GroupLayout(home);
@@ -297,7 +331,7 @@ public class HomeBorrower extends javax.swing.JFrame {
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(buttonSearch)))
-                        .addContainerGap(435, Short.MAX_VALUE))))
+                        .addContainerGap(354, Short.MAX_VALUE))))
         );
         booksListLayout.setVerticalGroup(
             booksListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -317,7 +351,7 @@ public class HomeBorrower extends javax.swing.JFrame {
                     .addComponent(totalAwaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bookDetails))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 506, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
                 .addGap(14, 14, 14))
         );
 
@@ -411,23 +445,27 @@ public class HomeBorrower extends javax.swing.JFrame {
             }
         });
 
+        number.setFont(new java.awt.Font("Segoe UI", 3, 16)); // NOI18N
+        number.setForeground(new java.awt.Color(51, 51, 255));
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(264, Short.MAX_VALUE)
+                .addGap(77, 77, 77)
+                .addComponent(number, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(addToAwaiting)
                 .addGap(44, 44, 44)
                 .addComponent(jButton1)
                 .addGap(627, 627, 627))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 1081, Short.MAX_VALUE)
-                        .addComponent(jScrollPane6)))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 1176, Short.MAX_VALUE)
+                    .addComponent(jScrollPane6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -436,14 +474,15 @@ public class HomeBorrower extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(addToAwaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(addToAwaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(number, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
 
@@ -460,15 +499,52 @@ public class HomeBorrower extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Đăng kí mượn", new javax.swing.ImageIcon(getClass().getResource("/Images/request.png")), bookLoanList); // NOI18N
 
+        jPanel5.setBackground(new java.awt.Color(228, 228, 228));
+
+        tableHistory.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Mã mượn sách", "Ngày mượn sách", "Tên sách", "Nhà xuất bản", "Năm xuất bản", "Tác giả", "Số ngày mượn", "Ngày trả", "Tiền phạt", "Ghi chú"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane7.setViewportView(tableHistory);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 1165, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 569, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1301, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 614, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Lịch sử mượn", new javax.swing.ImageIcon(getClass().getResource("/Images/File-History-icon.png")), jPanel1); // NOI18N
@@ -503,11 +579,11 @@ public class HomeBorrower extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1507, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1426, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -558,8 +634,6 @@ public class HomeBorrower extends javax.swing.JFrame {
             default:
                 break;
         }
-
-        BooksDAO booksDAO = new BooksDAO();
         List<Book> listBook = booksDAO.findAll(filterForm);
         DefaultTableModel tbBooks = (DefaultTableModel) tableListBook.getModel();
         tbBooks.setRowCount(0);
@@ -574,7 +648,6 @@ public class HomeBorrower extends javax.swing.JFrame {
         if (tableListBook.getSelectedRow() == -1) {
             JOptionPane.showMessageDialog(null, "Vui lòng chọn sách để xem chi tiết", "Lỗi", JOptionPane.ERROR_MESSAGE);
         } else {
-            BooksDAO booksDAO = new BooksDAO();
             String bookId = tableListBook.getModel().getValueAt(tableListBook.getSelectedRow(), 0).toString();
             Book book = booksDAO.findByBookId(bookId);
             BookDetails bookDetails = new BookDetails(book);
@@ -588,7 +661,6 @@ public class HomeBorrower extends javax.swing.JFrame {
         if (tableListBook.getSelectedRow() == -1) {
             JOptionPane.showMessageDialog(null, "Vui lòng chọn sách để đăng kí mượn", "Lỗi", JOptionPane.ERROR_MESSAGE);
         } else {
-            BooksDAO booksDAO = new BooksDAO();
             String bookId = tableListBook.getModel().getValueAt(tableListBook.getSelectedRow(), 0).toString();
             Book book = booksDAO.findByBookId(bookId);
             AwaitingApproval awaitingApproval = new AwaitingApproval();
@@ -626,6 +698,7 @@ public class HomeBorrower extends javax.swing.JFrame {
 
             picks.add(awaitingApproval);
             totalAwaiting.setText(String.valueOf(picks.size()));
+            reloadNumberOfBooksBorrowing();
 
             DefaultTableModel pickListsTB = (DefaultTableModel) pickList.getModel();
             pickListsTB.setRowCount(0);
@@ -650,20 +723,24 @@ public class HomeBorrower extends javax.swing.JFrame {
                     await.getBook().getPublisher(), await.getBook().getAuthor(), await.getBook().getSubject(), await.getBorrowedDay()});
             }
             totalAwaiting.setText(String.valueOf(picks.size()));
+            reloadNumberOfBooksBorrowing();
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void addToAwaitingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addToAwaitingMouseClicked
         // TODO add your handling code here:
+        if(numberOfBooksBorrowing>5){
+             JOptionPane.showMessageDialog(null, "Bạn đã mượn quá số sách , Mỗi người chỉ được mượn tối đa cùng lúc 5 quyển ", "Lỗi", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
          AwaitingApprovalDAO awaitingApprovalDAO = new AwaitingApprovalDAO();
          awaitingApprovalDAO.save(picks);
-        
          DefaultTableModel pickListsTB = (DefaultTableModel) pickList.getModel();
          pickListsTB.setRowCount(0);
          picks.clear();
          totalAwaiting.setText("0");
          ReloadAwaitingApproval();
-
+}
     }//GEN-LAST:event_addToAwaitingMouseClicked
 
     private void addToAwaitingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addToAwaitingActionPerformed
@@ -707,7 +784,6 @@ public class HomeBorrower extends javax.swing.JFrame {
     }
     
     public void ReloadAwaitingApproval(){
-        AwaitingApprovalDAO awaitingApprovalDAO = new AwaitingApprovalDAO();
         awaitingApprovalList=awaitingApprovalDAO.findByLibraryCard(user.getLibraryCard());
         DefaultTableModel tableAwaitingApproval = (DefaultTableModel) TableAwaitingApproval.getModel();
         tableAwaitingApproval.setRowCount(0);
@@ -716,11 +792,25 @@ public class HomeBorrower extends javax.swing.JFrame {
                     ,awaitingApproval.getBook().getName(), awaitingApproval.getBook().getPublisher(),
                     awaitingApproval.getBook().getAuthor(), awaitingApproval.getBook().getSubject(),awaitingApproval.getBorrowedDay()});
         }
-        
-        
-       
+        reloadNumberOfBooksBorrowing();
     }
+
   
+    public void reloadNumberOfBooksBorrowing(){
+        numberOfBooksBorrowing = 0;
+        numberOfBooksBorrowing += callCardDAO.numberOfBorrowingBooksByUser(user.getLibraryCard());
+        numberOfBooksBorrowing += awaitingApprovalDAO.numberOfAwtingApprovalByUser(user.getLibraryCard());
+        numberOfBooksBorrowing += picks.size();
+        
+        if(numberOfBooksBorrowing>5){
+            number.setForeground(Color.red);
+            number.setText(numberOfBooksBorrowing + "/5");
+        }   
+        else{
+            number.setForeground(Color.blue);
+            number.setText(numberOfBooksBorrowing + "/5");
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TableAwaitingApproval;
@@ -743,18 +833,22 @@ public class HomeBorrower extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JButton logout;
+    private javax.swing.JLabel number;
     private javax.swing.JTable pickList;
+    private javax.swing.JTable tableHistory;
     private javax.swing.JTable tableListBook;
     private javax.swing.JLabel totalAwaiting;
     private javax.swing.JComboBox<String> typeSearch;

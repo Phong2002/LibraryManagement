@@ -1166,7 +1166,9 @@ public class HomeLibrarian extends javax.swing.JFrame {
         DefaultTableModel tableUser = (DefaultTableModel) this.tableUser.getModel();
         tableUser.setRowCount(0);
         for (User user : listUser) {
-            tableUser.addRow(new Object[]{user.getLibraryCard(), user.getFullname(), user.getGender(), user.getAddress(), user.getDateOfBirth().toString(), user.getNumberPhone()});
+            int numberOfBooksBorrowed = callCardDAO.findByLibraryCard(user.getLibraryCard()).size();
+            int numberOfBooksBorrowing=callCardDAO.numberOfBorrowingBooksByUser(user.getLibraryCard());
+            tableUser.addRow(new Object[]{user.getLibraryCard(), user.getFullname(), user.getGender(), user.getAddress(), user.getDateOfBirth().toString(), user.getNumberPhone(),numberOfBooksBorrowing,numberOfBooksBorrowed});
         }
     }
 
@@ -1200,6 +1202,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
             
         }
         resetTableBooks(filterBook);
+        resetTableUsers(filterUser);
     }
 
     /**

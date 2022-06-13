@@ -1196,11 +1196,11 @@ public class HomeLibrarian extends javax.swing.JFrame {
         for (CallCard callCard : listCallCard) {
             ReturnBook returnBook = returnBookDAO.findByCallCardId(callCard.getCallCardId());
             if(returnBook.getReturnBookId()==null){
-                tableCallCard.addRow(new Object[]{callCard.getCallCardId(),callCard.getUser().getLibraryCard(),callCard.getUser().getLibraryCard(),
+                tableCallCard.addRow(new Object[]{callCard.getCallCardId(),callCard.getUser().getLibraryCard(),callCard.getUser().getFullname(),
                 callCard.getBook().getBookId(),callCard.getBook().getName(),callCard.getBorrowedDate(),callCard.getBorrowedDay(),"Chưa trả"});
             }
             else{
-                tableCallCard.addRow(new Object[]{callCard.getCallCardId(),callCard.getUser().getLibraryCard(),callCard.getUser().getLibraryCard(),
+                tableCallCard.addRow(new Object[]{callCard.getCallCardId(),callCard.getUser().getLibraryCard(),callCard.getUser().getFullname(),
                 callCard.getBook().getBookId(),callCard.getBook().getName(),callCard.getBorrowedDate(),callCard.getBorrowedDay(),returnBook.getPayDay(),
                 returnBook.getStatus(),returnBook.getFines(),returnBook.getNote()});
             }

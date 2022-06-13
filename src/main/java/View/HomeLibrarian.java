@@ -175,6 +175,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
         jTabbedPane2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 51, 255), null, null));
         jTabbedPane2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
 
+        jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(255, 204, 204));
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -187,6 +188,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Giới thiệu", jScrollPane4);
 
+        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(153, 255, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -286,7 +288,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
                 java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, true
+                false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -423,10 +425,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
         tableCallCard.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         tableCallCard.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null}
+
             },
             new String [] {
                 "Mã Mượn Sách", "Thẻ Thư Viện", "Người Mượn", "Mã Sách", "Tên Sách", "Ngày Mượn", "Số Ngày Mượn", "Ngày Trả", "Tình Trạng Sách", "Tiền Phạt", "Ghi Chú"
@@ -435,9 +434,16 @@ public class HomeLibrarian extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Long.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         tableCallCard.setIntercellSpacing(new java.awt.Dimension(5, 5));

@@ -206,6 +206,7 @@
                           <SubComponents>
                             <Component class="javax.swing.JTextArea" name="jTextArea2">
                               <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="cc" green="cc" red="ff" type="rgb"/>
                                 </Property>
@@ -240,6 +241,7 @@
                           <SubComponents>
                             <Component class="javax.swing.JTextArea" name="jTextArea1">
                               <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="cc" green="ff" red="99" type="rgb"/>
                                 </Property>
@@ -787,18 +789,21 @@
                       <SubComponents>
                         <Component class="javax.swing.JTable" name="tableHistory">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Times New Roman" size="14" style="0"/>
+                            </Property>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="10" rowCount="0">
-                                <Column editable="true" title="M&#xe3; m&#x1b0;&#x1ee3;n s&#xe1;ch" type="java.lang.String"/>
-                                <Column editable="true" title="Ng&#xe0;y m&#x1b0;&#x1ee3;n s&#xe1;ch" type="java.lang.String"/>
-                                <Column editable="true" title="T&#xea;n s&#xe1;ch" type="java.lang.String"/>
-                                <Column editable="true" title="Nh&#xe0; xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
-                                <Column editable="true" title="N&#x103;m xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
-                                <Column editable="true" title="T&#xe1;c gi&#x1ea3;" type="java.lang.Object"/>
-                                <Column editable="true" title="S&#x1ed1; ng&#xe0;y m&#x1b0;&#x1ee3;n" type="java.lang.Object"/>
-                                <Column editable="true" title="Ng&#xe0;y tr&#x1ea3;" type="java.lang.Object"/>
-                                <Column editable="true" title="Ti&#x1ec1;n ph&#x1ea1;t" type="java.lang.Object"/>
-                                <Column editable="true" title="Ghi ch&#xfa;" type="java.lang.Object"/>
+                                <Column editable="false" title="M&#xe3; m&#x1b0;&#x1ee3;n s&#xe1;ch" type="java.lang.String"/>
+                                <Column editable="false" title="Ng&#xe0;y m&#x1b0;&#x1ee3;n s&#xe1;ch" type="java.lang.String"/>
+                                <Column editable="false" title="T&#xea;n s&#xe1;ch" type="java.lang.String"/>
+                                <Column editable="false" title="Nh&#xe0; xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="N&#x103;m xu&#x1ea5;t b&#x1ea3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="T&#xe1;c gi&#x1ea3;" type="java.lang.Object"/>
+                                <Column editable="false" title="S&#x1ed1; ng&#xe0;y m&#x1b0;&#x1ee3;n" type="java.lang.Object"/>
+                                <Column editable="false" title="Ng&#xe0;y tr&#x1ea3;" type="java.lang.Object"/>
+                                <Column editable="false" title="Ti&#x1ec1;n ph&#x1ea1;t" type="java.lang.Object"/>
+                                <Column editable="false" title="Ghi ch&#xfa;" type="java.lang.Object"/>
                               </Table>
                             </Property>
                             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -855,6 +860,10 @@
                                 </Column>
                               </TableColumnModel>
                             </Property>
+                            <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[5, 5]"/>
+                            </Property>
+                            <Property name="rowHeight" type="int" value="30"/>
                             <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                             </Property>

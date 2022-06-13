@@ -163,6 +163,7 @@ public class HomeBorrower extends javax.swing.JFrame {
         jTabbedPane2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 51, 255), null, null));
         jTabbedPane2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
 
+        jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(255, 204, 204));
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -175,6 +176,7 @@ public class HomeBorrower extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Giới thiệu", jScrollPane4);
 
+        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(153, 255, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -501,6 +503,7 @@ public class HomeBorrower extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(228, 228, 228));
 
+        tableHistory.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         tableHistory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -512,11 +515,20 @@ public class HomeBorrower extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
         });
+        tableHistory.setIntercellSpacing(new java.awt.Dimension(5, 5));
+        tableHistory.setRowHeight(30);
         jScrollPane7.setViewportView(tableHistory);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);

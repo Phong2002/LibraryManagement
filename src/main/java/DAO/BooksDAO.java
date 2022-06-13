@@ -33,7 +33,6 @@ public class BooksDAO {
         }
 
         String SQL = "SELECT * FROM `Book` " + where;
-        System.out.println(SQL);
         try {
             Connection connection = JDBC.Connection();
             Statement statement = connection.createStatement();

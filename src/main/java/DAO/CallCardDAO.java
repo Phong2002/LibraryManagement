@@ -101,7 +101,6 @@ public class CallCardDAO {
         }
 
         String SQL = "SELECT * FROM `CallCard` " + WHERE;
-        System.out.println(SQL);
         try {
             Connection connection = JDBC.Connection();
             Statement statement = connection.createStatement();

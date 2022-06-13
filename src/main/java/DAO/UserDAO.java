@@ -91,7 +91,7 @@ public class UserDAO {
         }
 
         String SQL = "SELECT * FROM `User` WHERE `role`='borrower'  " + where;
-        System.out.println(SQL);
+ 
         try {
             Connection connection = JDBC.Connection();
             Statement statement = connection.createStatement();

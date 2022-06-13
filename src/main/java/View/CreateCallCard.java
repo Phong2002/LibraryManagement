@@ -1,6 +1,7 @@
 package View;
 
 import DAO.CallCardDAO;
+import Entity.AwaitingApproval;
 import Entity.Book;
 import Entity.CallCard;
 import Entity.User;
@@ -365,6 +366,35 @@ public class CreateCallCard extends javax.swing.JFrame {
                 mess.setText(user.getFullname()+" đã mượn quá số lần !");
            }
            else{
+            switch (book.getSubject()) {
+                case "Sách Chính trị - pháp luật":
+                    callCard.setBorrowedDay(20);
+                    break;
+                case "Sách Khoa học công nghệ – Kinh tế":
+                    callCard.setBorrowedDay(15);
+                    break;
+                case "Sách Văn học nghệ thuật":
+                    callCard.setBorrowedDay(15);
+                    break;
+                case "Sách Văn hóa xã hội – Lịch sử":
+                    callCard.setBorrowedDay(14);
+                    break;
+                case "Sách Giáo trình":
+                    callCard.setBorrowedDay(45);
+                    break;
+                case "Sách Truyện, tiểu thuyết":
+                    callCard.setBorrowedDay(25);
+                    break;
+                case "Sách Tâm lý, tâm linh, tôn giáo":
+                    callCard.setBorrowedDay(10);
+                    break;
+                case "Sách thiếu nhi":
+                    callCard.setBorrowedDay(7);
+                    break;
+                default:
+                    break;
+            }
+               
             LocalDate borrowedDate = LocalDate.of(this.borrowedDate.getDate().getYear()+1900,this.borrowedDate.getDate().getMonth()+1,this.borrowedDate.getDate().getDate());
             callCard.setBook(book);
             callCard.setUser(user);

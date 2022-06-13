@@ -268,7 +268,7 @@ public class HomeLibrarian extends javax.swing.JFrame {
         });
 
         typeSubjectFilter.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        typeSubjectFilter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Sách Chính trị – pháp luật", "Sách Khoa học công nghệ – Kinh tế", "Sách Văn học nghệ thuật", "Sách Văn hóa xã hội – Lịch sử", "Sách Giáo trình", "Sách Truyện, tiểu thuyết", "Sách Tâm lý, tâm linh, tôn giáo", "Sách thiếu nhi" }));
+        typeSubjectFilter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Sách Chính trị - pháp luật", "Sách Khoa học công nghệ – Kinh tế", "Sách Văn học nghệ thuật", "Sách Văn hóa xã hội – Lịch sử", "Sách Giáo trình", "Sách Truyện, tiểu thuyết", "Sách Tâm lý, tâm linh, tôn giáo", "Sách thiếu nhi" }));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Thể loại");

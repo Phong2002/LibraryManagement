@@ -244,7 +244,7 @@ public class HomeBorrower extends javax.swing.JFrame {
         jLabel3.setText("Thể loại");
 
         typeSubjectFilter.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        typeSubjectFilter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Sách Chính trị – pháp luật", "Sách Khoa học công nghệ – Kinh tế", "Sách Văn học nghệ thuật", "Sách Văn hóa xã hội – Lịch sử", "Sách Giáo trình", "Sách Truyện, tiểu thuyết", "Sách Tâm lý, tâm linh, tôn giáo", "Sách thiếu nhi" }));
+        typeSubjectFilter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Sách Chính trị - pháp luật", "Sách Khoa học công nghệ – Kinh tế", "Sách Văn học nghệ thuật", "Sách Văn hóa xã hội – Lịch sử", "Sách Giáo trình", "Sách Truyện, tiểu thuyết", "Sách Tâm lý, tâm linh, tôn giáo", "Sách thiếu nhi" }));
 
         tableListBook.setAutoCreateRowSorter(true);
         tableListBook.setBackground(new java.awt.Color(235, 246, 249));
@@ -680,7 +680,7 @@ public class HomeBorrower extends javax.swing.JFrame {
             awaitingApproval.setUser(user);
 
             switch (book.getSubject()) {
-                case "Sách Chính trị – pháp luật":
+                case "Sách Chính trị - pháp luật":
                     awaitingApproval.setBorrowedDay(20);
                     break;
                 case "Sách Khoa học công nghệ – Kinh tế":

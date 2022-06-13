@@ -434,7 +434,7 @@
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="9">
                         <StringItem index="0" value="T&#x1ea5;t c&#x1ea3;"/>
-                        <StringItem index="1" value="S&#xe1;ch Ch&#xed;nh tr&#x1ecb; &#x2013; ph&#xe1;p lu&#x1ead;t"/>
+                        <StringItem index="1" value="S&#xe1;ch Ch&#xed;nh tr&#x1ecb; - ph&#xe1;p lu&#x1ead;t"/>
                         <StringItem index="2" value="S&#xe1;ch Khoa h&#x1ecd;c c&#xf4;ng ngh&#x1ec7; &#x2013; Kinh t&#x1ebf;"/>
                         <StringItem index="3" value="S&#xe1;ch V&#x103;n h&#x1ecd;c ngh&#x1ec7; thu&#x1ead;t"/>
                         <StringItem index="4" value="S&#xe1;ch V&#x103;n h&#xf3;a x&#xe3; h&#x1ed9;i &#x2013; L&#x1ecb;ch s&#x1eed;"/>
